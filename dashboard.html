@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Botanical Garden Management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body" data-page="dashboard">
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            🌿 Botanical CMS
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html" class="active">📊 Dashboard</a></li>
+            <li><a href="plants.html">🍃 Plants</a></li>
+            <li><a href="staff.html">👥 Staff</a></li>
+            <li><a href="visitors.html">🎟️ Visitors</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <header class="topbar">
+            <h1>Dashboard Overview</h1>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </header>
+
+        <!-- Summary Cards -->
+        <div class="summary-grid">
+            <div class="summary-card">
+                <h3>Total Plants</h3>
+                <div class="number" id="totalPlants">-</div>
+            </div>
+            <div class="summary-card">
+                <h3>Total Staff</h3>
+                <div class="number" id="totalStaff">-</div>
+            </div>
+            <div class="summary-card">
+                <h3>Total Visitors</h3>
+                <div class="number" id="totalVisitors">-</div>
+            </div>
+            <div class="summary-card">
+                <h3>Total Revenue</h3>
+                <div class="number" id="totalRevenue">₹0.00</div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
